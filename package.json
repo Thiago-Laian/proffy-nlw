@@ -1,14 +1,25 @@
 {
-  "name": "proffy",
+  "name": "proffy-nlw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Após clone o repositório executar o comando \"npm install\" para instalar as dependências do projeto",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-ThiagoLaian/proffy-nlw.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-ThiagoLaian/proffy-nlw/issues"
+  },
+  "homepage": "https://github.com/dev-ThiagoLaian/proffy-nlw#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
