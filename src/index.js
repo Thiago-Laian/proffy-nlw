@@ -1,18 +1,24 @@
+// Importando o express
 const express = require('express');
 const app = express();
 
+// Configuração nunjucks
+const nunjucks = require('nunjucks')
+nunjucks.configure('src/views', {
+    express: app,
+    noCache: true,
+})
+
+// Arquivos staticos
 app.use(express.static("public"))
 
-.get("/", (req, res)=>{
-    return res.render("index.html")
-})
+// Rotas
+const rotas = require('./rotas/rotas')
 
-.get("/study", (req, res)=>{
-    return res.render("study.html")
-})
+app.get("/", rotas)
 
-.get("/give-classes", (req, res)=>{
-    return res.render("give-classes.html")
-})
+.get("/study", rotas)
+
+.get("/give-classes", rotas)
 
 app.listen(3000, ()=>{console.log("Servidor rodando")})
