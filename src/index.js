@@ -21,4 +21,6 @@ app.get("/", rotas)
 
 .get("/give-classes", rotas)
 
+.post("/give-classes", rotas)
+
 app.listen(3000, ()=>{console.log("Servidor rodando")})

@@ -10,4 +10,6 @@ rotas.get("/study", controller.pageStudy)
 
 rotas.get("/give-classes", controller.pageGiveClasses)
 
+rotas.post("/give-classes", controller.saveClasses)
+
 module.exports = rotas
