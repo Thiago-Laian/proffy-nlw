@@ -9,6 +9,9 @@ nunjucks.configure('src/views', {
     noCache: true,
 })
 
+//
+app.use(express.urlencoded({ extended: true }))
+
 // Arquivos staticos
 app.use(express.static("public"))
 
@@ -17,10 +20,10 @@ const rotas = require('./rotas/rotas')
 
 app.get("/", rotas)
 
-.get("/study", rotas)
+app.get("/study", rotas)
 
-.get("/give-classes", rotas)
+app.get("/give-classes", rotas)
 
-.post("/give-classes", rotas)
+app.post("/save-classes", rotas)
 
 app.listen(3000, ()=>{console.log("Servidor rodando")})
