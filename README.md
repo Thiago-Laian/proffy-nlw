@@ -14,7 +14,7 @@ Tabela de conteúdos
    * [Sobre](#Sobre)
    * [Tecnologias](#Tecnologias)
    * [Funcionalidades](#Funcionalidades)
-   * [Como usar](#Como usar)
+   * [Como-usar](#Como-usar)
 <!--te-->
 
 ## Sobre 📄
